@@ -1,102 +1,96 @@
-# NU-Information Exchange System (FAST Multi-Campus Network)
+# 🌐 NU-Information Exchange System (FAST Multi-Campus Network)
 
-##  Project Overview
-This project simulates communication between multiple FAST-NUCES campuses using a hybrid TCP/UDP client-server architecture.
-
-
+## 📌 Project Overview
+This project simulates communication between multiple FAST-NUCES campuses using a hybrid **TCP/UDP client-server architecture**, enabling real-time messaging and broadcast communication between campuses.
 
 ---
 
-##  Objective
-To implement a multi-campus communication system where different campuses can:
-- Send direct messages (TCP)
-- Broadcast announcements (UDP)
-- Maintain online status using heartbeat signals
+## 🎯 Objective
+To build a multi-campus communication system where different campuses can:
+-  Send direct messages (TCP)
+-  Broadcast announcements (UDP)
+-  Maintain online status using heartbeat signals
 
 ---
 
-##  Technologies Used
-- C++ (Socket Programming)
-- TCP & UDP Protocols
-- Multi-threading
-
+## 🛠️ Technologies Used
+-  C++ (Socket Programming)
+-  TCP & UDP Protocols
+-  Multi-threading
 
 ---
 
-##  System Architecture
+## 🏗️ System Architecture
 
 ###  Central Server (Islamabad)
 - Handles multiple clients
-- Authenticates campuses
-- Routes messages
-- Broadcasts announcements
+-  Authenticates campuses
+-  Routes messages
+-  Broadcasts announcements
 
-###  Campus Clients
+### Campus Clients
 - Connect to server via TCP
 - Send heartbeat via UDP
-- Provide console interface for users
+-  Provide console interface for users
 
 ---
 
-##  Network Configuration
+## 🌐 Network Configuration
 
-| Campus  | Password      | UDP Port |
-|---------|--------------|----------|
-| Lahore  | NU-LHR-123   | 6001     |
-| Karachi | NU-KHI-123   | 6002     |
-| CFD     | NU-CFD-123   | 6003     |
-| Multan  | NU-MUL-123   | 6004     |
+| Campus  | Password    | UDP Port |
+|----------|------------|----------|
+| Lahore   | NU-LHR-123 | 6001     |
+| Karachi  | NU-KHI-123 | 6002     |
+| CFD      | NU-CFD-123 | 6003     |
+| Multan   | NU-MUL-123 | 6004     |
 
 ---
 
-##  Communication Protocol
+## 📡 Communication Protocol
 
 ###  TCP (Reliable)
 - Authentication
 - Direct messaging
 - Command handling
 
-###  UDP (Fast)
+### UDP (Fast)
 - Heartbeat messages
 - Broadcast messages
 
 ---
 
-##  How to Run
+## 🚀 How to Run
 
-### 1. Compile Server
+###  Compile Server
 ```bash
 g++ server.cpp -o server -pthread
 ./server
 ```
 
-### 2. Compile Client
+###  Compile Client
 ```bash
 g++ client.cpp -o client -pthread
 ./client
 ```
 
-### 3. Run Clients
-- Enter Campus Name
+###  Run Clients
+- Enter Campus Name 
 - Enter Port (e.g., 6001)
-- Enter Password
+- Enter Password 
 
 ---
 
-##  Features
-- Multi-client handling using threads
-- Real-time messaging
-- Broadcast system
-- Inbox system for each campus
-- Central monitoring system
+## ✨ Features
+-  Multi-client handling using threads
+-  Real-time messaging system
+-  Broadcast announcement system
+-  Inbox system for each campus
+-  Central monitoring server
 
 ---
 
-## Learning Outcomes
-- Socket programming (TCP & UDP)
-- Multi-threading in C++
-- Network simulation concepts
-
----
-
-
+## 📚 Learning Outcomes
+-  Socket programming (TCP & UDP)
+-  Multi-threading in C++
+-  Network communication concepts
+-  Distributed system simulation
