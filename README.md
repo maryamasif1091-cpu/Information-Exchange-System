@@ -1,11 +1,11 @@
 # 🌐 NU-Information Exchange System (FAST Multi-Campus Network)
 
-## 📌 Project Overview
+##  Project Overview
 This project simulates communication between multiple FAST-NUCES campuses using a hybrid **TCP/UDP client-server architecture**, enabling real-time messaging and broadcast communication between campuses.
 
 ---
 
-## 🎯 Objective
+##  Objective
 To build a multi-campus communication system where different campuses can:
 -  Send direct messages (TCP)
 -  Broadcast announcements (UDP)
@@ -13,14 +13,14 @@ To build a multi-campus communication system where different campuses can:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 -  C++ (Socket Programming)
 -  TCP & UDP Protocols
 -  Multi-threading
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ###  Central Server (Islamabad)
 - Handles multiple clients
@@ -35,7 +35,7 @@ To build a multi-campus communication system where different campuses can:
 
 ---
 
-## 🌐 Network Configuration
+##  Network Configuration
 
 | Campus  | Password    | UDP Port |
 |----------|------------|----------|
@@ -46,7 +46,7 @@ To build a multi-campus communication system where different campuses can:
 
 ---
 
-## 📡 Communication Protocol
+##  Communication Protocol
 
 ###  TCP (Reliable)
 - Authentication
@@ -59,7 +59,7 @@ To build a multi-campus communication system where different campuses can:
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ###  Compile Server
 ```bash
@@ -80,7 +80,7 @@ g++ client.cpp -o client -pthread
 
 ---
 
-## ✨ Features
+##  Features
 -  Multi-client handling using threads
 -  Real-time messaging system
 -  Broadcast announcement system
@@ -89,7 +89,7 @@ g++ client.cpp -o client -pthread
 
 ---
 
-## 📚 Learning Outcomes
+##  Learning Outcomes
 -  Socket programming (TCP & UDP)
 -  Multi-threading in C++
 -  Network communication concepts
